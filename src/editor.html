@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Editor</title>
+    <style>
+      body {
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
+      #screenshot {
+        max-width: 90%;
+        max-height: 80vh;
+      }
+      .controls {
+        margin-top: 20px;
+      }
+      .controls button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .controls button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="screenshot" alt="Screenshot" />
+    <div class="controls">
+      <button id="rotate">Rotate</button>
+      <button id="reset">Reset</button>
+      <button id="download">Download</button>
+    </div>
+
+    <script src="editor.js"></script>
+  </body>
+</html>
